@@ -297,6 +297,7 @@
             <!-- Sofa (GLB Model, scaled down and positioned in the living room) -->
             <a-entity gltf-model="#sofa-model" position="-5 0.1 4" scale="0.02 0.02 0.02" rotation="0 90 0" shadow="cast: true; receive: true"></a-entity>
         </a-entity>
+        
 
         <!-- ============ ROOM 2: KITCHEN ============ -->
         <a-entity id="kitchen" position="12 0 0">
@@ -419,8 +420,7 @@
                 <a-entity geometry="primitive: sphere; radius: 0.08" material="color: #888" position="0.4 -0.2 0.36"></a-entity>
             </a-entity>
 
-            <!-- DINING TABLE (Center, debug box for visibility) -->
-            <a-entity gltf-model="#dining-table-model" position="0 1 -1.5" scale="0.00 0.00 0.00" rotation="0 0 0" shadow="cast: true; receive: true"></a-entity>
+            
             <!-- Kitchen Shelves (GLB Model, scaled down and positioned above counter) -->
             <a-entity gltf-model="#kitchen-shelves-model" position="0 1.1 5.2" scale="0.03 0.03 0.03" rotation="0 0 0" shadow="cast: true; receive: true"></a-entity>
 
@@ -493,7 +493,10 @@
             <a-entity geometry="primitive: plane; width: 0.8; height: 0.8" material="color: #FFB6C1" position="-2 3 5.9"></a-entity>
 
             <a-entity gltf-model="#bed-model" position="0 0 0" scale="1 1 1" shadow="cast: true"></a-entity>
-            
+            <a-entity gltf-model="#ceiling-lamp-model" position="0 2 0" scale="0.02 0.02 0.02" rotation="0 90 0" shadow="cast: true; receive: true"></a-entity>
+        </a-entity>
+        <a-entity gltf-model="#2-bedroom-dressers-model" position="0 0 0" scale="0.02 0.02 0.02" rotation="0 90 0" shadow="cast: true; receive: true"></a-entity>
+        </a-entity>
             <a-light type="point" position="0 3 0" intensity="1.2" color="#ffcc99" distance="22"></a-light>
         </a-entity>
 
@@ -642,9 +645,10 @@
             <a-asset-item id="lounge-chair-model" src="assets/models/pool_lounge_chair.glb"></a-asset-item>
             <a-asset-item id="sports-car-model" src="assets/models/sport_car.glb"></a-asset-item>
             <a-asset-item id="kitchen-shelves-model" src="assets/models/basic_kitchen_cabinets_and_counter.glb"></a-asset-item>
-            <a-asset-item id="dining-table-model" src="assets/models/simple_dining_table.glb"></a-asset-item>
             <a-asset-item id="sofa-model" src="assets/models/sofa.glb"></a-asset-item>
             
+            
+
             <img id="grass-texture" src="https://www.textures.com/download/3dmodels_grass_01/134700">
             <img id="wood-texture" src="https://www.textures.com/download/3dmodels_wood_01/134697">
             <img id="marble-texture" src="https://www.textures.com/download/3dmodels_marble_01/134698">
